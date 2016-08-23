@@ -1,6 +1,6 @@
 # Login with Swift using Navigation Controller.
 
-![123](http://lmsotfy.com/so.png)
+//![name](http://lmsotfy.com/so.png)
 
 Only screens and transaction screens.
 

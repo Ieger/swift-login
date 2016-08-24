@@ -18,17 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mgo-Xv-WEB">
-                                <rect key="frame" x="20" y="204" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mgo-Xv-WEB">
+                                <rect key="frame" x="20" y="243" width="280" height="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CpF-5r-WD6">
-                                <rect key="frame" x="20" y="255" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CpF-5r-WD6">
+                                <rect key="frame" x="20" y="294" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lJ-ny-vag">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lJ-ny-vag">
                                 <rect key="frame" x="20" y="518" width="280" height="30"/>
                                 <state key="normal" title="Entrar">
                                     <color key="titleColor" red="1" green="0.97613136990000005" blue="0.95355584530000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -37,12 +38,15 @@
                                     <segue destination="Q7e-Qx-DYC" kind="show" id="RrX-sc-JLP"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="twy-nU-S0Z">
+                                <rect key="frame" x="93" y="77" width="135" height="81"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="7lJ-ny-vag" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="NtE-Dy-1Tu"/>
-                            <constraint firstItem="7lJ-ny-vag" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bHm-j2-Adk"/>
+                            <constraint firstItem="CpF-5r-WD6" firstAttribute="top" secondItem="mgo-Xv-WEB" secondAttribute="bottom" constant="21" id="F1a-r3-c63"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7lJ-ny-vag" secondAttribute="bottom" constant="80" id="nbS-h0-Zhl"/>
+                            <constraint firstItem="CpF-5r-WD6" firstAttribute="top" secondItem="mgo-Xv-WEB" secondAttribute="bottom" constant="21" id="u3b-oi-eO0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="TkV-iB-37k"/>
@@ -71,7 +75,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bem vindo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJD-Ii-xI7">
                                 <rect key="frame" x="20" y="128" width="280" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -128,4 +132,7 @@
             <point key="canvasLocation" x="792" y="965"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo2.png" width="256" height="256"/>
+    </resources>
 </document>

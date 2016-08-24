@@ -25,6 +25,13 @@ class LoginController: UIViewController {
         txt_login.layer.cornerRadius = 0
         txt_senha.layer.cornerRadius = 0
         
+        let bottomLine = CALayer()
+        bottomLine.frame = CGRectMake(0.0, txt_senha.frame.height - 1, txt_senha.frame.width, 1.0)
+        bottomLine.backgroundColor = UIColor.whiteColor().CGColor
+        txt_login.borderStyle = UITextBorderStyle.None
+        txt_login.layer.addSublayer(bottomLine)
+     
+        
         btn_entrar.backgroundColor = UIColor.clearColor()
         btn_entrar.layer.cornerRadius = 0
         btn_entrar.layer.borderWidth = 1

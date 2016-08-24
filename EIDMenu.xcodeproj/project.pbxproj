@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841DCB771D6D3B3A00FF3971 /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 841DCB761D6D3B3A00FF3971 /* logo2.png */; };
 		84F13B4D1D6BB8BE000F5E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F13B4C1D6BB8BE000F5E94 /* AppDelegate.swift */; };
 		84F13B4F1D6BB8BE000F5E94 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F13B4E1D6BB8BE000F5E94 /* LoginController.swift */; };
 		84F13B521D6BB8BE000F5E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F13B501D6BB8BE000F5E94 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		841DCB761D6D3B3A00FF3971 /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
 		84F13B491D6BB8BE000F5E94 /* EIDMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EIDMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F13B4C1D6BB8BE000F5E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84F13B4E1D6BB8BE000F5E94 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		84F13B7B1D6BBA24000F5E94 /* imagens */ = {
 			isa = PBXGroup;
 			children = (
+				841DCB761D6D3B3A00FF3971 /* logo2.png */,
 				84F13B7D1D6BBA55000F5E94 /* back_dagrede.jpg */,
 			);
 			name = imagens;
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F13B571D6BB8BE000F5E94 /* LaunchScreen.storyboard in Resources */,
+				841DCB771D6D3B3A00FF3971 /* logo2.png in Resources */,
 				84F13B541D6BB8BE000F5E94 /* Assets.xcassets in Resources */,
 				84F13B521D6BB8BE000F5E94 /* Main.storyboard in Resources */,
 				84F13B7E1D6BBA55000F5E94 /* back_dagrede.jpg in Resources */,
@@ -512,6 +516,7 @@
 				84F13B731D6BB8BF000F5E94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84F13B741D6BB8BF000F5E94 /* Build configuration list for PBXNativeTarget "EIDMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +525,7 @@
 				84F13B761D6BB8BF000F5E94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84F13B771D6BB8BF000F5E94 /* Build configuration list for PBXNativeTarget "EIDMenuUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +534,7 @@
 				84F13B791D6BB8BF000F5E94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

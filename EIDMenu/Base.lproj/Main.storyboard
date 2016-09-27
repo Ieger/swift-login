@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZjD-AH-AEU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZjD-AH-AEU">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Login-->
@@ -15,38 +16,92 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="SCNView">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mgo-Xv-WEB">
-                                <rect key="frame" x="20" y="243" width="280" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="otd-S7-K5s"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CpF-5r-WD6" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                        <color key="value" red="1" green="0.1711736932" blue="0.1099382361" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mgo-Xv-WEB" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                        <color key="value" red="1" green="0.1711736932" blue="0.1099382361" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CpF-5r-WD6">
-                                <rect key="frame" x="20" y="294" width="280" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lJ-ny-vag">
-                                <rect key="frame" x="20" y="518" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lJ-ny-vag">
                                 <state key="normal" title="Entrar">
-                                    <color key="titleColor" red="1" green="0.97613136990000005" blue="0.95355584530000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.97613136990000005" blue="0.95355584530000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="Q7e-Qx-DYC" kind="show" id="RrX-sc-JLP"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="twy-nU-S0Z">
-                                <rect key="frame" x="93" y="77" width="135" height="81"/>
-                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="CpF-5r-WD6" firstAttribute="top" secondItem="mgo-Xv-WEB" secondAttribute="bottom" constant="21" id="F1a-r3-c63"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7lJ-ny-vag" secondAttribute="bottom" constant="80" id="nbS-h0-Zhl"/>
-                            <constraint firstItem="CpF-5r-WD6" firstAttribute="top" secondItem="mgo-Xv-WEB" secondAttribute="bottom" constant="21" id="u3b-oi-eO0"/>
+                            <constraint firstItem="7lJ-ny-vag" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="346" id="90Y-Oc-QDO"/>
+                            <constraint firstItem="mgo-Xv-WEB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="Ds0-Ft-Dkc"/>
+                            <constraint firstItem="CpF-5r-WD6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="G8L-FF-d9A"/>
+                            <constraint firstItem="mgo-Xv-WEB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="251" id="MTr-Zx-jjH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mgo-Xv-WEB" secondAttribute="trailing" constant="4" id="cBh-qn-yrl"/>
+                            <constraint firstItem="CpF-5r-WD6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="289" id="kJM-2i-hx2"/>
+                            <constraint firstItem="mgo-Xv-WEB" firstAttribute="top" secondItem="otd-S7-K5s" secondAttribute="bottom" constant="115" id="nib-fW-yl9"/>
+                            <constraint firstItem="7lJ-ny-vag" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="opS-Ba-HPz"/>
+                            <constraint firstItem="otd-S7-K5s" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="pM8-C0-qhx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="otd-S7-K5s" secondAttribute="trailing" constant="80" id="qbh-rd-ueR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CpF-5r-WD6" secondAttribute="trailing" constant="4" id="wml-im-Kwj"/>
+                            <constraint firstItem="otd-S7-K5s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="81" id="xnt-ZQ-mp5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7lJ-ny-vag" secondAttribute="trailing" constant="4" id="zmU-zl-Xcv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="TkV-iB-37k"/>
@@ -58,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="403" y="965"/>
+            <point key="canvasLocation" x="-185.625" y="803.75"/>
         </scene>
         <!--Home-->
         <scene sceneID="6ub-0E-Vby">
@@ -69,36 +124,33 @@
                         <viewControllerLayoutGuide type="bottom" id="R59-Dl-yIk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QDM-hR-oxk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bem vindo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJD-Ii-xI7">
-                                <rect key="frame" x="20" y="128" width="280" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bem vindo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJD-Ii-xI7">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="zJD-Ii-xI7" firstAttribute="top" secondItem="j8x-pi-AK4" secondAttribute="bottom" constant="60" id="1ao-Oj-cLY"/>
-                            <constraint firstItem="zJD-Ii-xI7" firstAttribute="leading" secondItem="QDM-hR-oxk" secondAttribute="leadingMargin" id="ROT-1A-wmg"/>
-                            <constraint firstItem="zJD-Ii-xI7" firstAttribute="trailing" secondItem="QDM-hR-oxk" secondAttribute="trailingMargin" id="ek1-ye-4Qe"/>
+                            <constraint firstItem="zJD-Ii-xI7" firstAttribute="top" secondItem="j8x-pi-AK4" secondAttribute="bottom" constant="24" id="AYU-He-PWP"/>
+                            <constraint firstItem="zJD-Ii-xI7" firstAttribute="leading" secondItem="QDM-hR-oxk" secondAttribute="leadingMargin" constant="31" id="Y2Z-b4-4wT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zJD-Ii-xI7" secondAttribute="trailing" constant="32" id="hqX-IA-vcL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="x6v-gJ-IJD"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gsm-r7-b9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1140" y="965"/>
+            <point key="canvasLocation" x="1149" y="804"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EY4-KI-YII">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZjD-AH-AEU" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ija-Do-RqE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -110,14 +162,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ED7-C4-Oot" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36" y="963"/>
+            <point key="canvasLocation" x="-863" y="804"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YYb-SK-8TW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q7e-Qx-DYC" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Enf-pi-NcL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -129,7 +180,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e76-Rd-xRt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="792" y="965"/>
+            <point key="canvasLocation" x="491" y="804"/>
         </scene>
     </scenes>
     <resources>

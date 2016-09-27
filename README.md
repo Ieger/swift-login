@@ -1,4 +1,4 @@
-# Login with Swift using Navigation Controller.
+# Login with Swift using Navigation Controller. (under development)
 
 Only screens and transaction screens.
 

@@ -1,0 +1,6 @@
+framework module Pods_EIDMenu {
+  umbrella header "Pods-EIDMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}
